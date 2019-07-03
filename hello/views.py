@@ -1,8 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
 from hello.forms import ProjectForm
-
 from hello.models import Project
 
 

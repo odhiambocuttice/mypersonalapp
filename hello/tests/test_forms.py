@@ -5,7 +5,8 @@ from hello.forms import ProjectForm
 class TestForms(SimpleTestCase):
     def test_project_form_valid(self):
         form = ProjectForm(
-            data={"title": "capuchino", "describe": "hot", "technology": "really hot"}
+            data={"title": "capuchino", "describe": "hot",
+                  "technology": "really hot"}
         )
         self.assertTrue(form.is_valid())
 
